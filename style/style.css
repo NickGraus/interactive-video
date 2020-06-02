@@ -17,16 +17,12 @@ body {
     grid-template-columns: 50% 50%;
     grid-template-rows: 50% 50%;
     min-width: 100%; 
-    min-height: 100vh;
+    min-height: 90vh;
   }
 
   .section {
       margin: 5px;
       padding: 5px;
-      height: ;
       background-color: yellow;
-  }
-
-  #one {
-      background-color: yellow;
+      visibility: hidden;
   }

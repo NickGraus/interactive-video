@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="style/style.css">
     </head>
     <body>
-        <video id="v0"controls muted autoplay >
+        <video id="v0"muted autoplay controls>
             <source type="video/mp4" src="Work at Brainport.mp4"></source>
         </video>
 
@@ -15,13 +15,13 @@
             <div class="section" id="one">
                 Hello
             </div>
-            <div class="section" id="2">
+            <div class="sectionn"  id="two">
                 2
             </div>
-            <div class="section" id="3">
+            <div class="section"  id="three">
                 3
             </div>
-            <div class="section" id="4">
+            <div class="section"  id="four">
                 4
             </div>
         </div>
@@ -32,6 +32,9 @@
 <script>
     var vid = document.getElementById("v0");
 vid.onended = function() {
-    alert("The video has ended");
+    var sections = document.getElementsByClassName("section");
+    for(var i = 0; i < sections.length; i++){
+		sections[i].style.visibility = "visible";
+	}
 };
 </script>
