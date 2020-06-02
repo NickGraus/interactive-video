@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive-video</title>
-</head>
-<body>
-    <video id="v0" loop autoplay >
-        <source type="video/mp4" src="Work at Brainport.mp4"></source>
-    </video>
-    <script>
-        document.getElementById("v0").play();
-    </script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interactive-video</title>
+        <link rel="stylesheet" href="style/style.css">
+    </head>
+    <body>
+        <video id="v0"controls muted autoplay >
+            <source type="video/mp4" src="Work at Brainport.mp4"></source>
+        </video>
 
+        <div class="content">
+            <div class="section" id="one">
+                Hello
+            </div>
+            <div class="section" id="2">
+                2
+            </div>
+            <div class="section" id="3">
+                3
+            </div>
+            <div class="section" id="4">
+                4
+            </div>
+        </div>
+    </body>
 </html>
 
+
+<script>
+    var vid = document.getElementById("v0");
+vid.onended = function() {
+    alert("The video has ended");
+};
+</script>
