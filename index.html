@@ -8,33 +8,23 @@
     </head>
     <body>
         <video id="v0"muted autoplay controls>
-            <source type="video/mp4" src="Work at Brainport.mp4"></source>
+            <source type="video/mp4" src=""></source>
         </video>
 
         <div class="content">
-            <div class="section" id="one">
-                Hello
-            </div>
-            <div class="sectionn"  id="two">
-                2
-            </div>
-            <div class="section"  id="three">
-                3
-            </div>
+            <a class="section" id="one">
+                <p>Click here if you want to watch te video again</p>
+            </a>
+            <a class="section" id="two">
+                <p>Click here if you want to know more about starting your own company</p>
+            </a>
+            <a class="section"  id="three">
+               <p>Click here to see all the innovations that Brainport has in it's region</p>
+            </a>
             <div class="section"  id="four">
-                4
+                <p>Check out the QR-code for more info</p>
             </div>
         </div>
     </body>
+    <script src="scripts/main.js"></script>
 </html>
-
-
-<script>
-    var vid = document.getElementById("v0");
-vid.onended = function() {
-    var sections = document.getElementsByClassName("section");
-    for(var i = 0; i < sections.length; i++){
-		sections[i].style.visibility = "visible";
-	}
-};
-</script>

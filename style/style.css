@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    font-family: arial;
+    font-size: 16pt;
 }
 
 /* Style the video: 100% width and height to cover the entire window */
@@ -8,7 +10,6 @@ body {
     right: 0;
     bottom: 0;
     min-width: 100%; 
-    min-height: 100%;
     z-index: -1;
   }
 
@@ -22,7 +23,9 @@ body {
 
   .section {
       margin: 5px;
-      padding: 5px;
-      background-color: yellow;
+      padding: 40px;
+      background-color: #1a1a1a;
+      opacity: 90%; /* change to background opacity */
+      color: white;
       visibility: hidden;
   }
