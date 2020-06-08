@@ -6,8 +6,12 @@ let videos = [
             reference: "Work at Brainport.mp4"
         ],
         option2: [
-            text: ["Click here to see how Brainport helps with the Corona crisis"]
-            reference: "Corona-brainport.mp4"
+            text: [
+                "Click here to see how Brainport helps with the Corona crisis"
+            ]
+            reference: [
+                "Corona-brainport.mp4"
+            ]
         ],
         option3: [
             text: "Click here to see how Brainport supports it region",

@@ -1,0 +1,68 @@
+{
+    "videos" : 
+    [
+        {
+            "name" : "Dit is een naam",
+            "options" : [
+                {
+                    "text" : "Dit is tekst wat leuk",
+                    "reference" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                },
+                {
+                    "text" : "user input",
+                    "reference": "user input"
+                },
+                {
+                    "text" : "user input",
+                    "reference" : "user input"
+                },
+                {
+                    "qr_Image" : "path or link to image",
+                    "reference" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                }
+            ]
+        },
+        {
+            "name" : "Dit is een naam",
+            "options" : [
+                {
+                    "text" : "Dit is tekst wat leuk",
+                    "reference" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                },
+                {
+                    "text" : "user input",
+                    "reference": "user input"
+                },
+                {
+                    "text" : "user input",
+                    "reference" : "user input"
+                },
+                {
+                    "qr_Image" : "path or link to image",
+                    "reference" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                }
+            ]
+        },
+        {
+            "name" : "Dit is een naam",
+            "options" : [
+                {
+                    "text" : "Dit is tekst wat leuk",
+                    "reference" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                },
+                {
+                    "text" : "user input",
+                    "reference": "user input"
+                },
+                {
+                    "text" : "user input",
+                    "reference" : "user input"
+                },
+                {
+                    "qr_Image" : "path or link to image",
+                    "reference" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                }
+            ]
+        }
+    ]
+}
