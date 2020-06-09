@@ -6,20 +6,19 @@
             "name" : "Work at Brainport",
             "options" : [
                 {
-                    "text" : "Dit is tekst wat leuk",
-                    "reference" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                    "text" : "Rewatch the video",
+                    "reference" : "Work at Brainport"
                 },
                 {
-                    "text" : "optie 1",
-                    "reference": "user input"
+                    "text" : "Get to know more about how Brainport helps during the Corona crisis.",
+                    "reference": "Corona-brainport"
                 },
                 {
-                    "text" : "optie 2",
-                    "reference" : "user input"
+                    "text" : "Get to know more how Brainport help charity",
+                    "reference" : "Donatie-brainport"
                 },
                 {
-                    "qr_Image" : "path or link to image",
-                    "reference" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                    "text" : "Scan the QR-code for more info"
                 }
             ]
         },
@@ -28,20 +27,19 @@
             "name" : "Corona-brainport",
             "options" : [
                 {
-                    "text" : "Dit is tekst wat leuk",
-                    "reference" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                    "text" : "Rewatch the video",
+                    "reference" : "Corona-brainport"
                 },
                 {
-                    "text" : "Joejoe",
-                    "reference": "user input"
+                    "text" : "See how you can start working at Brainport",
+                    "reference": "Work at Brainport"
                 },
                 {
-                    "text" : "Hallie hallo",
-                    "reference" : "user input"
+                    "text" : "Get to know more how Brainport help charity",
+                    "reference" : "Donatie-brainport"
                 },
                 {
-                    "qr_Image" : "path or link to image",
-                    "reference" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                    "text" : "Scan the QR-code for more info"
                 }
             ]
         },
@@ -50,19 +48,19 @@
             "name" : "Donatie-brainport",
             "options" : [
                 {
-                    "text" : "Dit is tekst wat leuk",
-                    "reference" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                    "text" : "Rewatch the video",
+                    "reference" : "Donatie-brainport"
                 },
                 {
-                    "text" : "Je moeder",
-                    "reference": "user input"
+                    "text" : "See how you can start working at Brainport",
+                    "reference": "Work at Brainport"
                 },
                 {
-                    "text" : "Dat ja",
-                    "reference" : "user input"
+                    "text" : "Get to know more about how Brainport helps during the Corona crisis.",
+                    "reference" : "Corona-brainport"
                 },
                 {
-                    "qr_Image" : "path or link to image",
+                    "text" : "Scan the QR-code for more info",
                     "reference" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                 }
             ]
