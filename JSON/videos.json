@@ -2,18 +2,19 @@
     "videos" : 
     [
         {
-            "name" : "Dit is een naam",
+            "id" : 0,
+            "name" : "Work at Brainport",
             "options" : [
                 {
                     "text" : "Dit is tekst wat leuk",
                     "reference" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                 },
                 {
-                    "text" : "user input",
+                    "text" : "optie 1",
                     "reference": "user input"
                 },
                 {
-                    "text" : "user input",
+                    "text" : "optie 2",
                     "reference" : "user input"
                 },
                 {
@@ -23,18 +24,19 @@
             ]
         },
         {
-            "name" : "Dit is een naam",
+            "id" : 1,
+            "name" : "Corona-brainport",
             "options" : [
                 {
                     "text" : "Dit is tekst wat leuk",
                     "reference" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                 },
                 {
-                    "text" : "user input",
+                    "text" : "Joejoe",
                     "reference": "user input"
                 },
                 {
-                    "text" : "user input",
+                    "text" : "Hallie hallo",
                     "reference" : "user input"
                 },
                 {
@@ -44,18 +46,19 @@
             ]
         },
         {
-            "name" : "Dit is een naam",
+            "id" : 2,
+            "name" : "Donatie-brainport",
             "options" : [
                 {
                     "text" : "Dit is tekst wat leuk",
                     "reference" : "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                 },
                 {
-                    "text" : "user input",
+                    "text" : "Je moeder",
                     "reference": "user input"
                 },
                 {
-                    "text" : "user input",
+                    "text" : "Dat ja",
                     "reference" : "user input"
                 },
                 {
