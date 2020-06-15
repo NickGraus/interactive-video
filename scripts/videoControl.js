@@ -1,41 +1,53 @@
 const videoControl = (function() {
-    let henk;
-    let vid = document.getElementById("v0");
-    let sections = document.getElementsByClassName("section");
-    let section = document.createElement("div");
+    let data;
+    let vid;
+    let sections = [];
     let videoId;
 
 /**
- *  Function gets data from JSON
- * @param {Object} data Data from JSON file
+ *  Setup all functions and makes them executable
+ * @param {Object} jsonData 
+ * @param {String} videoId 
+ * @param {String} sectionsClassName
+ * @example Setup(data, "v0", "section");
  */
-    const Setup = (data) =>
+    const Setup = (jsonData, videoId = "v0", sectionsClassName = "section") =>
     {
-        henk = data;
-        console.log("jan");
+        data = jsonData;
+        vid = document.getElementById(videoId);
+        sections = document.getElementsByClassName(sectionsClassName);
+        
+        selectRandomVideo();
+        createVideoHandlers();
     }
 
-    const piet = () => 
+/**
+ *  Select a random video that start first video
+ */
+    const selectRandomVideo = () => 
     {
-        let randomVid = henk.videos[Math.floor(Math.random()* henk.videos.length)];
+        let randomVid = data.videos[Math.floor(Math.random()* data.videos.length)];
 
         videoId = randomVid.id;
         let videoName = randomVid.filename;
         vid.src = videoName;
     }
 
-    const klaas = () =>
+/**
+ *  
+ */
+    const createVideoHandlers = () =>
     {
         vid.onended = function() {
 
             for(var i = 0; i < sections.length; i++){
                 sections[i].style.visibility = "visible";
                 
-                let optionText = henk.videos[videoId].options[i].text;
+                let optionText = data.videos[videoId].options[i].text;
                 let option = document.getElementsByClassName("section")[i];
                 option.innerHTML = optionText;
 
-                option.dataset.dest = henk.videos[videoId].options[i].linkFilename;
+                option.dataset.dest = data.videos[videoId].options[i].linkFilename;
                 sections[i].addEventListener("click", (event) => {
                     vid.src = option.dataset.dest;
                 })
@@ -45,15 +57,18 @@ const videoControl = (function() {
             for(var i = 0; i < sections.length; i++){
                 sections[i].style.visibility = "hidden";
             }
-        }
+            
+            data.videos.forEach(element => {                
+                let sarah = vid.src.slice((vid.src.indexOf("/", 8) + 1))
+                if(element.filename == sarah) {
+                    videoId = element.id;
+                }
+            });
+        } 
     }
-
-
 
     return { 
         Setup: Setup,
-        piet: piet,
-        klaas: klaas
     }
 })();
 

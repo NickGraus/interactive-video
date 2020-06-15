@@ -15,8 +15,6 @@ const fetchJSONFile = (path, callback) => {
 window.onload = () => {
     fetchJSONFile("../JSON/videos.json", function(data){
         videoControl.Setup(data);
-        videoControl.piet();
-        videoControl.klaas();
     })
     
 }
