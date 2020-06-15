@@ -55,8 +55,8 @@ const videoControl = (function () {
       }
 
       data.videos.forEach((element) => {
-        let sarah = vid.src.slice(vid.src.indexOf("/", 8) + 1);
-        if (element.filename == sarah) {
+        let videoPreLink = vid.src.slice(vid.src.indexOf("/", 8) + 1);vi
+        if (element.filename == videoPreLink) {
           videoId = element.id;
         }
       });
