@@ -1,7 +1,3 @@
-let vid = document.getElementById("v0");
-let sections = document.getElementsByClassName("section");
-let section = document.createElement("div");
-
 const fetchJSONFile = (path, callback) => {
     var httpRequest = new XMLHttpRequest();
     httpRequest.onreadystatechange = function () {
@@ -16,35 +12,16 @@ const fetchJSONFile = (path, callback) => {
     httpRequest.send();
 };
 
-fetchJSONFile("../JSON/videos.json", function(data) {
-    let randomVid = data.videos[Math.floor(Math.random()* data.videos.length)];
-    let videoId = randomVid.id;
-    let videoName = randomVid.filename;
-    vid.src = videoName;
+window.onload = () => {
+    fetchJSONFile("../JSON/videos.json", function(data){
+        videoControl.Setup(data);
+        videoControl.piet();
+        videoControl.klaas();
+    })
+    
+}
 
-    vid.onended = function() {
 
-        for(var i = 0; i < sections.length; i++){
-            sections[i].style.visibility = "visible";
-            
-            let optionText = data.videos[videoId].options[i].text;
-            let option = document.getElementsByClassName("section")[i];
-            option.innerHTML = optionText;
-
-            option.setAttribute("dest", data.videos[videoId].options[i].linkFilename);
-
-            sections[i].addEventListener("click", (event) => {
-                videoName = event.target.getAttribute("dest");
-                vid.src = videoName;
-            })
-        }
-    }
-    vid.onplay = function() {
-        for(var i = 0; i < sections.length; i++){
-            sections[i].style.visibility = "hidden";
-        }
-    }
-});
 
 
 
