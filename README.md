@@ -14,3 +14,4 @@ Inside the html file this piece of code should be added to make the prototype wo
   <div class="section"></div>
 </div>
 ```
+Furthermore there should be a folder containing the videos and should be called ###videos###
